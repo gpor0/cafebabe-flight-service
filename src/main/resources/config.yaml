@@ -1,0 +1,12 @@
+kumuluzee:
+  name: demo
+  version: 1.0-SNAPSHOT
+  env:
+    name: dev
+  metrics:
+    web-instrumentation:
+      - name: testEndpoint
+        url-pattern: tx/*
+  server:
+    http:
+      port: 8080
